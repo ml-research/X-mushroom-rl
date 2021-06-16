@@ -6,6 +6,7 @@ import gym
 from mushroom_rl.environments import Environment, MDPInfo
 from mushroom_rl.utils.spaces import *
 from mushroom_rl.utils.frames import LazyFrames, preprocess_frame
+from atariari.benchmark.wrapper import AtariARIWrapper
 
 
 class MaxAndSkip(gym.Wrapper):
@@ -69,6 +70,9 @@ class Atari(Environment):
         # MPD creation
         if 'NoFrameskip' in name:
             self.env = MaxAndSkip(gym.make(name), history_length, max_pooling)
+        elif '-Augmented' in name:
+            name = name.replace('-Augmented', '')
+            self.env = AtariARIWrapper(gym.make(name))
         else:
             self.env = gym.make(name)
 
@@ -82,6 +86,7 @@ class Atari(Environment):
         self._max_no_op_actions = max_no_op_actions
         self._history_length = history_length
         self._current_no_op = None
+        self.action_space = self.env.action_space
 
         assert self.env.unwrapped.get_action_meanings()[0] == 'NOOP'
 
@@ -129,12 +134,14 @@ class Atari(Environment):
                 1] == 'FIRE'
 
         self._state.append(preprocess_frame(obs, self._img_size))
-
+        if type(self.env) is AtariARIWrapper:
+            return LazyFrames(list(self._state),
+                              self._history_length), reward, absorbing, info, obs
         return LazyFrames(list(self._state),
                           self._history_length), reward, absorbing, info
 
     def render(self, mode='human'):
-        self.env.render(mode=mode)
+        return self.env.render(mode=mode)
 
     def stop(self):
         self.env.close()
