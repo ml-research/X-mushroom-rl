@@ -6,12 +6,12 @@ import torch.optim as optim
 import numpy as np
 from tqdm import trange
 
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import Gym
-from mushroom_rl.algorithms.actor_critic import A2C
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import Gym
+from x_mushroom_rl.algorithms.actor_critic import A2C
 
-from mushroom_rl.policy import GaussianTorchPolicy
-from mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.policy import GaussianTorchPolicy
+from x_mushroom_rl.utils.dataset import compute_J
 
 
 class Network(nn.Module):

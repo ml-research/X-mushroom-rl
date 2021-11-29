@@ -1,18 +1,18 @@
 import os
 
-from mushroom_rl.utils.preprocessors import MinMaxPreprocessor
-from mushroom_rl.utils.callbacks import PlotDataset
+from x_mushroom_rl.utils.preprocessors import MinMaxPreprocessor
+from x_mushroom_rl.utils.callbacks import PlotDataset
 
 import numpy as np
 
-from mushroom_rl.algorithms.policy_search import REINFORCE
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.approximators.regressor import Regressor
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import LQR
-from mushroom_rl.policy import StateStdGaussianPolicy
-from mushroom_rl.utils.dataset import compute_J
-from mushroom_rl.utils.optimizers import AdaptiveOptimizer
+from x_mushroom_rl.algorithms.policy_search import REINFORCE
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.approximators.regressor import Regressor
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import LQR
+from x_mushroom_rl.policy import StateStdGaussianPolicy
+from x_mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.optimizers import AdaptiveOptimizer
 
 from tqdm import tqdm
 

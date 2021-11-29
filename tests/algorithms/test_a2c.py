@@ -7,12 +7,12 @@ import numpy as np
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.core import Core
-from mushroom_rl.environments import Gym
-from mushroom_rl.algorithms.actor_critic import A2C
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import Gym
+from x_mushroom_rl.algorithms.actor_critic import A2C
 
-from mushroom_rl.policy import GaussianTorchPolicy
+from x_mushroom_rl.policy import GaussianTorchPolicy
 
 
 class Network(nn.Module):

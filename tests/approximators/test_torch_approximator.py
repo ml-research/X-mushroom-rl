@@ -1,7 +1,7 @@
 import numpy as np
 
-from mushroom_rl.approximators.regressor import Regressor
-from mushroom_rl.approximators.parametric import *
+from x_mushroom_rl.approximators.regressor import Regressor
+from x_mushroom_rl.approximators.parametric import *
 
 import torch
 import torch.nn as nn

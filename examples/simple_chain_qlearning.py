@@ -1,12 +1,12 @@
 import numpy as np
 
-from mushroom_rl.algorithms.value import QLearning
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms.value import QLearning
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.parameters import Parameter
 
-from mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.dataset import compute_J
 
 
 """

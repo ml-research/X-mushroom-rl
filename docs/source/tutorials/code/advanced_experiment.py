@@ -1,14 +1,14 @@
 import numpy as np
 
-from mushroom_rl.algorithms.value import SARSALambdaContinuous
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.core import Core
-from mushroom_rl.features import Features
-from mushroom_rl.features.tiles import Tiles
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.callbacks import CollectDataset
-from mushroom_rl.utils.parameters import Parameter
-from mushroom_rl.environments import Gym
+from x_mushroom_rl.algorithms.value import SARSALambdaContinuous
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.features import Features
+from x_mushroom_rl.features.tiles import Tiles
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.callbacks import CollectDataset
+from x_mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.environments import Gym
 
 # MDP
 mdp = Gym(name='MountainCar-v0', horizon=np.inf, gamma=1.)

@@ -1,9 +1,9 @@
 import numpy as np
 
-from mushroom_rl.features import Features
-from mushroom_rl.features.tiles import Tiles, VoronoiTiles
-from mushroom_rl.features.basis import GaussianRBF, FourierBasis
-from mushroom_rl.features.tensors import GaussianRBFTensor, RandomFourierBasis
+from x_mushroom_rl.features import Features
+from x_mushroom_rl.features.tiles import Tiles, VoronoiTiles
+from x_mushroom_rl.features.basis import GaussianRBF, FourierBasis
+from x_mushroom_rl.features.tensors import GaussianRBFTensor, RandomFourierBasis
 
 
 def test_tiles():

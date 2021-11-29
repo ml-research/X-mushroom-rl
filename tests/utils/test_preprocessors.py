@@ -2,19 +2,19 @@ import os
 import numpy as np
 import torch
 import torch.nn.functional as F
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.utils.parameters import Parameter
 
-from mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.policy import EpsGreedy
 
-from mushroom_rl.algorithms.value import DQN
+from x_mushroom_rl.algorithms.value import DQN
 
-from mushroom_rl.core import Core
+from x_mushroom_rl.core import Core
 
-from mushroom_rl.approximators.parametric import TorchApproximator
+from x_mushroom_rl.approximators.parametric import TorchApproximator
 from torch import optim, nn
 
-from mushroom_rl.environments import Gym
-from mushroom_rl.utils.preprocessors import MinMaxPreprocessor
+from x_mushroom_rl.environments import Gym
+from x_mushroom_rl.utils.preprocessors import MinMaxPreprocessor
 
 
 def test_normalizing_preprocessor(tmpdir):

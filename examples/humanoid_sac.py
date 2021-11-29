@@ -5,15 +5,15 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
-from mushroom_rl.utils.callbacks import PlotDataset
-from mushroom_rl.utils.preprocessors import MinMaxPreprocessor
+from x_mushroom_rl.utils.callbacks import PlotDataset
+from x_mushroom_rl.utils.preprocessors import MinMaxPreprocessor
 
-from mushroom_rl.algorithms.actor_critic import SAC
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.utils.dataset import compute_J, episodes_length
+from x_mushroom_rl.algorithms.actor_critic import SAC
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.utils.dataset import compute_J, episodes_length
 
-from mushroom_rl.environments.mujoco_envs import HumanoidGait
-from mushroom_rl.environments.mujoco_envs.humanoid_gait import \
+from x_mushroom_rl.environments.mujoco_envs import HumanoidGait
+from x_mushroom_rl.environments.mujoco_envs.humanoid_gait import \
     VelocityProfile3D, RandomConstantVelocityProfile, ConstantVelocityProfile
 
 from tqdm import trange

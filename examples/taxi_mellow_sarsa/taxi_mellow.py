@@ -1,12 +1,12 @@
 import numpy as np
 from joblib import Parallel, delayed
 
-from mushroom_rl.algorithms.value import SARSA
-from mushroom_rl.core import Core
-from mushroom_rl.environments.generators.taxi import generate_taxi
-from mushroom_rl.policy import Boltzmann, EpsGreedy, Mellowmax
-from mushroom_rl.utils.callbacks import CollectDataset
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms.value import SARSA
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments.generators.taxi import generate_taxi
+from x_mushroom_rl.policy import Boltzmann, EpsGreedy, Mellowmax
+from x_mushroom_rl.utils.callbacks import CollectDataset
+from x_mushroom_rl.utils.parameters import Parameter
 
 
 """

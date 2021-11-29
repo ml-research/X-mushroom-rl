@@ -2,13 +2,13 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
-from mushroom_rl.algorithms.value import DQN
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.approximators.parametric.torch_approximator import *
-from mushroom_rl.utils.dataset import compute_J
-from mushroom_rl.utils.parameters import Parameter, LinearParameter
+from x_mushroom_rl.algorithms.value import DQN
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.approximators.parametric.torch_approximator import *
+from x_mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.parameters import Parameter, LinearParameter
 
 from tqdm import tqdm, trange
 

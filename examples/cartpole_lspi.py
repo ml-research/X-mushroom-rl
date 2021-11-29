@@ -1,13 +1,13 @@
 import numpy as np
 
-from mushroom_rl.algorithms.value import LSPI
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import *
-from mushroom_rl.features import Features
-from mushroom_rl.features.basis import PolynomialBasis, GaussianRBF
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.dataset import episodes_length
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms.value import LSPI
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.features import Features
+from x_mushroom_rl.features.basis import PolynomialBasis, GaussianRBF
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.dataset import episodes_length
+from x_mushroom_rl.utils.parameters import Parameter
 
 
 """

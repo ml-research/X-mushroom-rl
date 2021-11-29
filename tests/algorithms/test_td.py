@@ -7,16 +7,16 @@ import torch.nn.functional as F
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.value import *
-from mushroom_rl.approximators.parametric import LinearApproximator, TorchApproximator
-from mushroom_rl.core import Core
-from mushroom_rl.environments.grid_world import GridWorld
-from mushroom_rl.environments.gym_env import Gym
-from mushroom_rl.features import Features
-from mushroom_rl.features.tiles import Tiles
-from mushroom_rl.policy.td_policy import EpsGreedy
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.value import *
+from x_mushroom_rl.approximators.parametric import LinearApproximator, TorchApproximator
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments.grid_world import GridWorld
+from x_mushroom_rl.environments.gym_env import Gym
+from x_mushroom_rl.features import Features
+from x_mushroom_rl.features.tiles import Tiles
+from x_mushroom_rl.policy.td_policy import EpsGreedy
+from x_mushroom_rl.utils.parameters import Parameter
 
 
 class Network(nn.Module):

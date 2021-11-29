@@ -5,10 +5,10 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
-from mushroom_rl.algorithms.actor_critic import SAC
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments.gym_env import Gym
-from mushroom_rl.utils.dataset import compute_J, parse_dataset
+from x_mushroom_rl.algorithms.actor_critic import SAC
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments.gym_env import Gym
+from x_mushroom_rl.utils.dataset import compute_J, parse_dataset
 
 from tqdm import trange
 

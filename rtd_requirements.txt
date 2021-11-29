@@ -1,8 +1,9 @@
 opencv-python
 numpy
 scipy
-gym
+gym==0.17.2
 gym[atari]
+atari-py==0.2.6
 scikit-learn
 matplotlib
 joblib

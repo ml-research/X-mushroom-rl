@@ -1,15 +1,15 @@
 import numpy as np
 
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments.segway import Segway
-from mushroom_rl.algorithms.policy_search import *
-from mushroom_rl.policy import DeterministicPolicy
-from mushroom_rl.distributions import GaussianDiagonalDistribution
-from mushroom_rl.approximators import Regressor
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.utils.dataset import compute_J
-from mushroom_rl.utils.callbacks import CollectDataset
-from mushroom_rl.utils.optimizers import AdaptiveOptimizer
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments.segway import Segway
+from x_mushroom_rl.algorithms.policy_search import *
+from x_mushroom_rl.policy import DeterministicPolicy
+from x_mushroom_rl.distributions import GaussianDiagonalDistribution
+from x_mushroom_rl.approximators import Regressor
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.callbacks import CollectDataset
+from x_mushroom_rl.utils.optimizers import AdaptiveOptimizer
 
 from tqdm import tqdm, trange
 tqdm.monitor_interval = 0

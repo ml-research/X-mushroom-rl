@@ -3,16 +3,16 @@ import torch
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.actor_critic import StochasticAC, StochasticAC_AVG
-from mushroom_rl.core import Core
-from mushroom_rl.environments import *
-from mushroom_rl.features import Features
-from mushroom_rl.features.tiles import Tiles
-from mushroom_rl.approximators import Regressor
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.policy import StateLogStdGaussianPolicy
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.actor_critic import StochasticAC, StochasticAC_AVG
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.features import Features
+from x_mushroom_rl.features.tiles import Tiles
+from x_mushroom_rl.approximators import Regressor
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.policy import StateLogStdGaussianPolicy
+from x_mushroom_rl.utils.parameters import Parameter
 
 
 def learn(alg):

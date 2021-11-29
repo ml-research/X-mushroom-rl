@@ -2,13 +2,13 @@ import numpy as np
 from joblib import Parallel, delayed
 from pathlib import Path
 
-from mushroom_rl.algorithms.value import QLearning, DoubleQLearning,\
+from x_mushroom_rl.algorithms.value import QLearning, DoubleQLearning,\
     WeightedQLearning, SpeedyQLearning
-from mushroom_rl.core import Core
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.callbacks import CollectQ
-from mushroom_rl.utils.parameters import Parameter, ExponentialParameter
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.callbacks import CollectQ
+from x_mushroom_rl.utils.parameters import Parameter, ExponentialParameter
 
 
 """

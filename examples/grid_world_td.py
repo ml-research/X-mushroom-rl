@@ -5,14 +5,14 @@ import numpy as np
 from matplotlib import pyplot as plt
 from joblib import Parallel, delayed
 
-from mushroom_rl.algorithms.value import QLearning, DoubleQLearning,\
+from x_mushroom_rl.algorithms.value import QLearning, DoubleQLearning,\
     WeightedQLearning, SpeedyQLearning, SARSA
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.callbacks import CollectDataset, CollectMaxQ
-from mushroom_rl.utils.dataset import parse_dataset
-from mushroom_rl.utils.parameters import ExponentialParameter
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.callbacks import CollectDataset, CollectMaxQ
+from x_mushroom_rl.utils.dataset import parse_dataset
+from x_mushroom_rl.utils.parameters import ExponentialParameter
 
 
 """

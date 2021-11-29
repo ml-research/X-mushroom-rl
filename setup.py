@@ -10,14 +10,15 @@ from Cython.Build import cythonize
 from Cython.Distutils import build_ext
 import numpy
 
-from mushroom_rl import __version__
-
+from x_mushroom_rl import __version__
+import site
+site.ENABLE_USER_SITE = "--user" in sys.argv[1:]
 
 def glob_data_files(data_package, data_type=None):
     data_type = '*' if data_type is None else data_type
     data_dir = data_package.replace(".", "/")
-    data_files = [] 
-    directories = glob.glob(data_dir+'/**/', recursive=True) 
+    data_files = []
+    directories = glob.glob(data_dir+'/**/', recursive=True)
     for directory in directories:
         subdir = directory[len(data_dir)+1:]
         if subdir != "":
@@ -60,33 +61,33 @@ long_description = 'MushroomRL is a Python Reinforcement Learning (RL) library' 
                    ' available at http://mushroomrl.readthedocs.io/en/latest/.'
 
 
-ext_modules = [Extension('mushroom_rl.environments.mujoco_envs.humanoid_gait.'
+ext_modules = [Extension('x_mushroom_rl.environments.mujoco_envs.humanoid_gait.'
                          '_external_simulation.muscle_simulation_stepupdate',
-                        ['mushroom_rl/environments/mujoco_envs/humanoid_gait/'
+                        ['x_mushroom_rl/environments/mujoco_envs/humanoid_gait/'
                          '_external_simulation/muscle_simulation_stepupdate.pyx'],
                          include_dirs=[numpy.get_include()])]
 
-mujoco_data_package = 'mushroom_rl.environments.mujoco_envs.data'
-extrenal_simulation_package = 'mushroom_rl.environments.mujoco_envs.humanoid_gait._external_simulation'
+mujoco_data_package = 'x_mushroom_rl.environments.mujoco_envs.data'
+extrenal_simulation_package = 'x_mushroom_rl.environments.mujoco_envs.humanoid_gait._external_simulation'
 
 project_urls = {
-    'Project repository': 'https://github.com/MushroomRL/mushroom-rl',
+    'Project repository': 'https://github.com/ml-research/X-mushroom-rl/',
     'Project documentation': 'https://mushroomrl.readthedocs.io/en/latest/',
     'MushroomRL Benchmarking Suite repository': 'https://github.com/MushroomRL/mushroom-rl-benchmark',
     'MushroomRL Benchmarking Suite documentation': 'https://mushroom-rl-benchmark.readthedocs.io/en/latest/index.html'
 }
 
 setup(
-    name='mushroom-rl',
+    name='x-mushroom-rl',
     version=__version__,
-    description='A Python library for Reinforcement Learning experiments.',
+    description='A Python library for eXplainable Reinforcement Learning experiments, based on mushroom-rl.',
     long_description=long_description,
     project_urls=project_urls,
-    author="Carlo D'Eramo, Davide Tateo",
-    author_email='carlo.deramo@gmail.com',
+    author="Quentin Delfosse",
+    author_email='q.delfosse@gmail.com',
     license='MIT',
     packages=[package for package in find_packages()
-              if package.startswith('mushroom_rl')],
+              if package.startswith('x_mushroom_rl')],
     zip_safe=False,
     install_requires=requires_list,
     extras_require=extras,

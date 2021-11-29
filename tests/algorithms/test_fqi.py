@@ -4,13 +4,13 @@ from sklearn.ensemble import ExtraTreesRegressor
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.value import BoostedFQI, DoubleFQI, FQI
-from mushroom_rl.core import Core
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.dataset import compute_J
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.value import BoostedFQI, DoubleFQI, FQI
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.parameters import Parameter
 
 
 def learn(alg, alg_params):

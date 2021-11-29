@@ -3,14 +3,14 @@ import torch
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.policy_search import *
-from mushroom_rl.approximators import Regressor
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.core import Core
-from mushroom_rl.environments.lqr import LQR
-from mushroom_rl.policy.gaussian_policy import StateStdGaussianPolicy
-from mushroom_rl.utils.optimizers import AdaptiveOptimizer
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.policy_search import *
+from x_mushroom_rl.approximators import Regressor
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments.lqr import LQR
+from x_mushroom_rl.policy.gaussian_policy import StateStdGaussianPolicy
+from x_mushroom_rl.utils.optimizers import AdaptiveOptimizer
 
 
 def learn(alg, alg_params):

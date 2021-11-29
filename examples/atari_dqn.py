@@ -8,15 +8,15 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
-from mushroom_rl.algorithms.value import AveragedDQN, CategoricalDQN, DQN,\
+from x_mushroom_rl.algorithms.value import AveragedDQN, CategoricalDQN, DQN,\
     DoubleDQN, MaxminDQN, DuelingDQN, NoisyDQN, Rainbow
-from mushroom_rl.approximators.parametric import TorchApproximator
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.dataset import compute_metrics
-from mushroom_rl.utils.parameters import LinearParameter, Parameter
-from mushroom_rl.utils.replay_memory import PrioritizedReplayMemory
+from x_mushroom_rl.approximators.parametric import TorchApproximator
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.dataset import compute_metrics
+from x_mushroom_rl.utils.parameters import LinearParameter, Parameter
+from x_mushroom_rl.utils.replay_memory import PrioritizedReplayMemory
 
 """
 This script runs Atari experiments with DQN, and some of its variants, as

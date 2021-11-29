@@ -5,11 +5,11 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
-from mushroom_rl.algorithms.actor_critic import DDPG
-from mushroom_rl.core import Core
-from mushroom_rl.environments.dm_control_env import DMControl
-from mushroom_rl.policy import OrnsteinUhlenbeckPolicy
-from mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.algorithms.actor_critic import DDPG
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments.dm_control_env import DMControl
+from x_mushroom_rl.policy import OrnsteinUhlenbeckPolicy
+from x_mushroom_rl.utils.dataset import compute_J
 
 
 class CriticNetwork(nn.Module):

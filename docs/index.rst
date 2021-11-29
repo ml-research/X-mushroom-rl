@@ -41,7 +41,7 @@ Solve a discrete MDP in few a lines. Firstly, create a **MDP**:
 
 ::
 
-    from mushroom_rl.environments import GridWorld
+    from x_mushroom_rl.environments import GridWorld
 
     mdp = GridWorld(width=3, height=3, goal=(2, 2), start=(0, 0))
 
@@ -49,8 +49,8 @@ Then, an epsilon-greedy **policy** with:
 
 ::
 
-    from mushroom_rl.policy import EpsGreedy
-    from mushroom_rl.utils.parameters import Parameter
+    from x_mushroom_rl.policy import EpsGreedy
+    from x_mushroom_rl.utils.parameters import Parameter
 
     epsilon = Parameter(value=1.)
     policy = EpsGreedy(epsilon=epsilon)
@@ -59,7 +59,7 @@ Eventually, the **agent** is:
 
 ::
 
-    from mushroom_rl.algorithms.value import QLearning
+    from x_mushroom_rl.algorithms.value import QLearning
 
     learning_rate = Parameter(value=.6)
     agent = QLearning(mdp.info, policy, learning_rate)
@@ -68,7 +68,7 @@ Learn:
 
 ::
 
-    from mushroom_rl.core.core import Core
+    from x_mushroom_rl.core.core import Core
 
     core = Core(agent, mdp)
     core.learn(n_steps=10000, n_steps_per_fit=1)

@@ -1,8 +1,8 @@
 import numpy as np
 
-from mushroom_rl.approximators import Regressor
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.policy import OrnsteinUhlenbeckPolicy
+from x_mushroom_rl.approximators import Regressor
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.policy import OrnsteinUhlenbeckPolicy
 
 
 def test_ornstein_uhlenbeck_policy():

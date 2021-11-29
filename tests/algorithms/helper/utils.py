@@ -9,25 +9,25 @@ from sklearn.ensemble import ExtraTreesRegressor
 import itertools
 
 import mushroom_rl
-from mushroom_rl.environments.environment import MDPInfo
-from mushroom_rl.policy.td_policy import TDPolicy
-from mushroom_rl.policy.torch_policy import TorchPolicy
-from mushroom_rl.policy.policy import ParametricPolicy
-from mushroom_rl.algorithms.actor_critic.deep_actor_critic.sac import SACPolicy
-from mushroom_rl.utils.replay_memory import ReplayMemory, PrioritizedReplayMemory
-from mushroom_rl.approximators._implementations.ensemble import Ensemble
-from mushroom_rl.approximators._implementations.action_regressor import ActionRegressor
-from mushroom_rl.approximators import Regressor
-from mushroom_rl.policy.noise_policy import OrnsteinUhlenbeckPolicy
-from mushroom_rl.features._implementations.tiles_features import TilesFeatures
-from mushroom_rl.utils.parameters import Parameter, LinearParameter
-from mushroom_rl.utils.optimizers import AdaptiveOptimizer, SGDOptimizer, AdamOptimizer, AdaGradOptimizer, \
+from x_mushroom_rl.environments.environment import MDPInfo
+from x_mushroom_rl.policy.td_policy import TDPolicy
+from x_mushroom_rl.policy.torch_policy import TorchPolicy
+from x_mushroom_rl.policy.policy import ParametricPolicy
+from x_mushroom_rl.algorithms.actor_critic.deep_actor_critic.sac import SACPolicy
+from x_mushroom_rl.utils.replay_memory import ReplayMemory, PrioritizedReplayMemory
+from x_mushroom_rl.approximators._implementations.ensemble import Ensemble
+from x_mushroom_rl.approximators._implementations.action_regressor import ActionRegressor
+from x_mushroom_rl.approximators import Regressor
+from x_mushroom_rl.policy.noise_policy import OrnsteinUhlenbeckPolicy
+from x_mushroom_rl.features._implementations.tiles_features import TilesFeatures
+from x_mushroom_rl.utils.parameters import Parameter, LinearParameter
+from x_mushroom_rl.utils.optimizers import AdaptiveOptimizer, SGDOptimizer, AdamOptimizer, AdaGradOptimizer, \
     RMSPropOptimizer
-from mushroom_rl.distributions.gaussian import GaussianDiagonalDistribution
-from mushroom_rl.utils.table import Table
-from mushroom_rl.utils.spaces import Discrete
-from mushroom_rl.features._implementations.functional_features import FunctionalFeatures
-from mushroom_rl.features._implementations.basis_features import BasisFeatures
+from x_mushroom_rl.distributions.gaussian import GaussianDiagonalDistribution
+from x_mushroom_rl.utils.table import Table
+from x_mushroom_rl.utils.spaces import Discrete
+from x_mushroom_rl.features._implementations.functional_features import FunctionalFeatures
+from x_mushroom_rl.features._implementations.basis_features import BasisFeatures
 
 class TestUtils:
     

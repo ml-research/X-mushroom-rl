@@ -7,11 +7,11 @@ import numpy as np
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.actor_critic import DDPG, TD3
-from mushroom_rl.core import Core
-from mushroom_rl.environments.gym_env import Gym
-from mushroom_rl.policy import OrnsteinUhlenbeckPolicy
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.actor_critic import DDPG, TD3
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments.gym_env import Gym
+from x_mushroom_rl.policy import OrnsteinUhlenbeckPolicy
 
 
 class CriticNetwork(nn.Module):

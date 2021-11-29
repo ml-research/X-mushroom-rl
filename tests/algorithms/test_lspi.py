@@ -3,14 +3,14 @@ import numpy as np
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.value import LSPI
-from mushroom_rl.core import Core
-from mushroom_rl.environments import *
-from mushroom_rl.features import Features
-from mushroom_rl.features.basis import PolynomialBasis
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.value import LSPI
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.features import Features
+from x_mushroom_rl.features.basis import PolynomialBasis
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.parameters import Parameter
 
 
 def learn_lspi():

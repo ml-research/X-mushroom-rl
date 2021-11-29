@@ -5,15 +5,15 @@ import torch.nn.functional as F
 from datetime import datetime
 from helper.utils import TestUtils as tu
 
-from mushroom_rl.algorithms import Agent
-from mushroom_rl.algorithms.value import DQN, DoubleDQN, AveragedDQN,\
+from x_mushroom_rl.algorithms import Agent
+from x_mushroom_rl.algorithms.value import DQN, DoubleDQN, AveragedDQN,\
     MaxminDQN, DuelingDQN, CategoricalDQN, NoisyDQN, Rainbow
-from mushroom_rl.core import Core
-from mushroom_rl.environments import *
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.approximators.parametric.torch_approximator import *
-from mushroom_rl.utils.parameters import Parameter, LinearParameter
-from mushroom_rl.utils.replay_memory import PrioritizedReplayMemory
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import *
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.approximators.parametric.torch_approximator import *
+from x_mushroom_rl.utils.parameters import Parameter, LinearParameter
+from x_mushroom_rl.utils.replay_memory import PrioritizedReplayMemory
 
 
 class Network(nn.Module):

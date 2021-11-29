@@ -1,5 +1,5 @@
 import numpy as np
-from mushroom_rl.core import Logger
+from x_mushroom_rl.core import Logger
 
 
 def test_logger(tmpdir):

@@ -1,6 +1,6 @@
-from mushroom_rl.environments import LQR
-from mushroom_rl.solvers.lqr import *
-from mushroom_rl.utils.numerical_gradient import numerical_diff_function
+from x_mushroom_rl.environments import LQR
+from x_mushroom_rl.solvers.lqr import *
+from x_mushroom_rl.utils.numerical_gradient import numerical_diff_function
 
 
 

@@ -1,12 +1,12 @@
 import numpy as np
 from sklearn.ensemble import ExtraTreesRegressor
 
-from mushroom_rl.algorithms.value import FQI
-from mushroom_rl.core import Core
-from mushroom_rl.environments import CarOnHill
-from mushroom_rl.policy import EpsGreedy
-from mushroom_rl.utils.dataset import compute_J
-from mushroom_rl.utils.parameters import Parameter
+from x_mushroom_rl.algorithms.value import FQI
+from x_mushroom_rl.core import Core
+from x_mushroom_rl.environments import CarOnHill
+from x_mushroom_rl.policy import EpsGreedy
+from x_mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.parameters import Parameter
 
 mdp = CarOnHill()
 

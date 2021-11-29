@@ -1,4 +1,4 @@
-from mushroom_rl.distributions import Distribution
+from x_mushroom_rl.distributions import Distribution
 
 
 def abstract_method_tester(f, *args):

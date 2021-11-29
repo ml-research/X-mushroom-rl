@@ -1,5 +1,5 @@
 try:
-    from mushroom_rl.environments.mujoco_envs import BallInACup
+    from x_mushroom_rl.environments.mujoco_envs import BallInACup
     import numpy as np
 
 

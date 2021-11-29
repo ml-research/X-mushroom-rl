@@ -1,16 +1,16 @@
 import numpy as np
 
-from mushroom_rl.algorithms.policy_search import REPS, RWR, PGPE
-from mushroom_rl.approximators.parametric import LinearApproximator
-from mushroom_rl.approximators.regressor import Regressor
-from mushroom_rl.core import Core, Logger
-from mushroom_rl.environments import ShipSteering
-from mushroom_rl.features.tiles import Tiles
-from mushroom_rl.features.features import Features
-from mushroom_rl.distributions import GaussianDiagonalDistribution
-from mushroom_rl.policy import DeterministicPolicy
-from mushroom_rl.utils.dataset import compute_J
-from mushroom_rl.utils.optimizers import AdaptiveOptimizer
+from x_mushroom_rl.algorithms.policy_search import REPS, RWR, PGPE
+from x_mushroom_rl.approximators.parametric import LinearApproximator
+from x_mushroom_rl.approximators.regressor import Regressor
+from x_mushroom_rl.core import Core, Logger
+from x_mushroom_rl.environments import ShipSteering
+from x_mushroom_rl.features.tiles import Tiles
+from x_mushroom_rl.features.features import Features
+from x_mushroom_rl.distributions import GaussianDiagonalDistribution
+from x_mushroom_rl.policy import DeterministicPolicy
+from x_mushroom_rl.utils.dataset import compute_J
+from x_mushroom_rl.utils.optimizers import AdaptiveOptimizer
 
 from tqdm import tqdm
 

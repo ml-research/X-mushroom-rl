@@ -1,7 +1,7 @@
 import numpy as np
 
-from mushroom_rl.environments.car_on_hill import CarOnHill
-from mushroom_rl.solvers.car_on_hill import solve_car_on_hill
+from x_mushroom_rl.environments.car_on_hill import CarOnHill
+from x_mushroom_rl.solvers.car_on_hill import solve_car_on_hill
 
 
 def test_car_on_hill():
